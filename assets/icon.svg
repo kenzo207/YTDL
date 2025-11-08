@@ -1,0 +1,31 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond dégradé rouge -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Fond arrondi -->
+  <rect width="128" height="128" rx="24" fill="url(#bg)"/>
+  
+  <!-- Logo YouTube stylisé -->
+  <g filter="url(#shadow)">
+    <!-- Triangle de lecture (play button) -->
+    <path d="M 45 35 L 45 93 L 90 64 Z" fill="white" opacity="0.95"/>
+    
+    <!-- Flèche de téléchargement -->
+    <g transform="translate(64, 45)">
+      <line x1="0" y1="0" x2="0" y2="35" stroke="white" stroke-width="6" stroke-linecap="round"/>
+      <path d="M -12 28 L 0 40 L 12 28" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+  </g>
+  
+  <!-- Barre de progression en bas -->
+  <rect x="20" y="100" width="88" height="8" rx="4" fill="white" opacity="0.9"/>
+  <rect x="20" y="100" width="60" height="8" rx="4" fill="#22c55e" opacity="0.9"/>
+</svg>
